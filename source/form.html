@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <div class="page__container">
+    <div class="page-container">
       <header class="main-header">
         <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-image" src="img/common/logo.svg" width="185" height="96" alt="Седона.">
@@ -60,7 +61,7 @@
               <h3 class="reference-form__title">Контактная информация:</h3>
               <div class="reference-form__wrapper">
                 <label class="reference-form__label" for="phone-number">Контактный телефон*:</label>
-                <input class="reference-form__field reference-form__field--phone-number " type="tel" id="phone-number" value="Введите телефон">
+                <input class="reference-form__field reference-form__field--phone-number" type="tel" id="phone-number" value="Введите телефон">
               </div>
               <div class="reference-form__wrapper">
                 <label class="reference-form__label" for="e-mail">Электронная почта*:</label>
@@ -97,7 +98,7 @@
                 </li>
                 <li class="reference-list__item">
                   <input class="reference-list__input-item reference-list__input-item--checkbox" type="checkbox" id="park" value="park" name="sights" checked>
-                  <label class="reference-list__item" for="park">Слайд-парк</label>
+                  <label class="reference-list__label-item" for="park">Слайд-парк</label>
                 </li>
                 <li class="reference-list__item">
                   <input class="reference-list__input-item reference-list__input-item--checkbox" type="checkbox" id="rocks" value="rocks" name="sights">
@@ -106,8 +107,8 @@
               </ul>
             </div>
             <div class="reference-form__information">
-              <label class="reference-form__label" for="comment">Опишите свои эмоции:</label>
-              <textarea name="reference-form__comment" rows="10" id="comment">Опишите подробно все свои восторги</textarea>
+              <label class="reference-form__label reference-form__label--title" for="comment">Опишите свои эмоции:</label>
+              <textarea class="reference-form__comment" rows="6" id="comment">Опишите подробно все свои восторги</textarea>
             </div>
             <button class="reference-form__button button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">ОТПРАВИТЬ ОТЗЫВ</button>
           </form>
@@ -182,10 +183,9 @@
       <div class="form-popup__container">
         <h3 class="form-popup__title">Ваш отзыв отправлен!</h3>
         <p class="form-popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <div class="form-popup__button-wrapper">
-          <button class="form-popup__button form-popup__button--success button" type="button" value="Закрыть окно">ЗАКРЫТЬ ОКНО</button>
-        </div>
       </div>
-    </div>
+      <div class="form-popup__button-wrapper">
+        <button class="form-popup__button form-popup__button--success button" type="button" value="Закрыть окно">ЗАКРЫТЬ ОКНО</button>
+      </div>
   </body>
 </html>
