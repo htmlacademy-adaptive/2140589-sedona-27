@@ -25,6 +25,15 @@
   min-height: 100%;
   min-width: 320px;
 }
+.button {
+  padding: 0;
+  margin: 0 auto;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
 .main-header {
   background-color: #ffffff;
   font-weight: 700;
@@ -89,15 +98,6 @@
   background-color: #eeeeee;
   padding: 24px;
 }
-.button {
-  padding: 0;
-  margin: 0 auto;
-  color: #ffffff;
-  background-color: #81b3d2;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: none;
-}
 .copyright__link {
   text-transform: uppercase;
   color: #000000;
@@ -160,7 +160,7 @@
   padding: 0;
 }
 .main-footer__wrapper {
-  padding: 3px 70px 30px;
+  padding: 28px 70px 30px;
 }
 .main-nav {
   background-color: #81b3d2;
@@ -224,17 +224,24 @@
 }
 .promo-clip {
   margin: 0;
-  padding: 25px 20px;
+  padding: 25px 20px 0;
   text-align: center;
   position: relative;
+  text-transform: uppercase;
 }
 .promo-clip__title {
   margin: 0;
   padding: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 30px;
 }
 .promo-clip__description {
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
 }
 .promo-clip__picture {
   margin: 0;
@@ -247,7 +254,7 @@
   background-color: inherit;
   position: absolute;
   right: 130px;
-  top: 170px;
+  top: 240px;
 }
 .promo {
   text-align: center;
@@ -327,7 +334,12 @@
   margin: 0;
   margin-bottom: 20px;
 }
-/*<textare> почему-то только по id срабаотывает*/
+.reference-form__field--phone-number {
+  color: rgba(0, 0, 0, 0.3);
+}
+.reference-form__field--phone-email {
+  color: rgba(0, 0, 0, 0.3);
+}
 .reference-form__comment {
   font-weight: 700;
   font-size: 18px;
@@ -368,6 +380,7 @@
   padding-top: 36px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 48px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -489,7 +502,7 @@
 }
 .welcome {
   padding: 90px 18px 85px 18px;
-  background-image: url("/img/common/main-background.jpg");
+  background-image: url("../img/common/main-background.jpg");
   background-repeat: no-repeat;
   background-color: #000000;
   background-size: cover;
