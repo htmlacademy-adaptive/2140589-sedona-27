@@ -1,12 +1,30 @@
 .reference-form {
   margin: 0;
   padding: 0;
+
+  @media (min-width: 768px) {
+    padding: 0 60px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 280px 280px;
+    gap: 43px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 60px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 430px 430px;
+    gap: 63px;
+    justify-content: center;
+  }
 }
 
 .reference-form__information {
   margin: 0;
   padding: 0;
 }
+
 
 .reference-form__title {
   font-weight: 700;
@@ -55,6 +73,43 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
+.reference-form__list {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 648px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: 1200px) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.reference-form__opinion {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  @media (min-width: 1200px) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
 .reference-form__comment {
   font-weight: 700;
   font-size: 18px;
@@ -66,9 +121,20 @@
   margin-top: 20px;
   margin-bottom: 56px;
   padding: 16px;
+
+  @media (min-width: 768px) {
+    margin: 0 auto;
+    width: 600px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0 auto;
+    width: 736px;
+  }
 }
 
 .reference-form__button {
   margin: 0;
   padding: 16px 49px;
 }
+

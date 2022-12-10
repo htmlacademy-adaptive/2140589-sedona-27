@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -68,47 +69,51 @@
                 <input class="reference-form__field reference-form__field--email" type="email" id="e-mail" value="Введите e-mail">
               </div>
             </div>
-            <div class="reference-form__information">
-              <h3 class="reference-form__title">Ваше Общее впечатление:</h3>
-              <ul class="reference-list">
-                <li class="reference-list__item">
-                  <input class="reference-list__input-item reference-list__input-item--radio" type="radio" id="positive" value="positive" name="opinion" checked>
-                  <label class="reference-list__label-item" for="positive"> Скорее положительное</label>
-                </li>
-                <li class="reference-list__item">
-                  <input class="reference-list__input-item reference-list__input-item--radio" type="radio" id="negative" value="negative" name="opinion">
-                  <label class="reference-list__label-item" for="negative"> Скорее отрицательное</label>
-                </li>
-                <li class="reference-list__item">
-                  <input class="reference-list__input-item reference-list__input-item--radio" type="radio" id="noidea" value="noidea" name="opinion">
-                  <label class="reference-list__label-item" for="noidea"> Затрудняюсь ответить</label>
-                </li>
-              </ul>
+            <div class="reference-form__list">
+              <div class="reference-form__information">
+                <h3 class="reference-form__title">Ваше Общее впечатление:</h3>
+                <ul class="reference-list">
+                  <li class="reference-list__item">
+                    <input class="reference-list__input-item reference-list__input-item--radio" type="radio" id="positive" value="positive" name="opinion" checked>
+                    <label class="reference-list__label-item" for="positive"> Скорее положительное</label>
+                  </li>
+                  <li class="reference-list__item">
+                    <input class="reference-list__input-item reference-list__input-item--radio" type="radio" id="negative" value="negative" name="opinion">
+                    <label class="reference-list__label-item" for="negative"> Скорее отрицательное</label>
+                  </li>
+                  <li class="reference-list__item">
+                    <input class="reference-list__input-item reference-list__input-item--radio" type="radio" id="noidea" value="noidea" name="opinion">
+                    <label class="reference-list__label-item" for="noidea"> Затрудняюсь ответить</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="reference-form__information">
+                <h3 class="reference-form__title">Посещенные достопримечательности:</h3>
+                <ul class="reference-list">
+                  <li class="reference-list__item">
+                    <input class="reference-list__input-item reference-list__input-item--checkbox" type="checkbox" id="bridge" value="bridge" name="sights" checked>
+                    <label class="reference-list__label-item" for="bridge">Мост Дьявола</label>
+                  </li>
+                  <li class="reference-list__item">
+                    <input class="reference-list__input-item reference-list__input-item--checkbox" type="checkbox" id="mountain" value="mountain" name="sights" checked>
+                    <label class="reference-list__label-item" for="mountain">Гора-Колокол</label>
+                  </li>
+                  <li class="reference-list__item">
+                    <input class="reference-list__input-item reference-list__input-item--checkbox" type="checkbox" id="park" value="park" name="sights" checked>
+                    <label class="reference-list__label-item" for="park">Слайд-парк</label>
+                  </li>
+                  <li class="reference-list__item">
+                    <input class="reference-list__input-item reference-list__input-item--checkbox" type="checkbox" id="rocks" value="rocks" name="sights">
+                    <label class="reference-list__label-item" for="rocks">Красные скалы</label>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="reference-form__information">
-              <h3 class="reference-form__title">Посещенные достопримечательности:</h3>
-              <ul class="reference-list">
-                <li class="reference-list__item">
-                  <input class="reference-list__input-item reference-list__input-item--checkbox" type="checkbox" id="bridge" value="bridge" name="sights" checked>
-                  <label class="reference-list__label-item" for="bridge">Мост Дьявола</label>
-                </li>
-                <li class="reference-list__item">
-                  <input class="reference-list__input-item reference-list__input-item--checkbox" type="checkbox" id="mountain" value="mountain" name="sights" checked>
-                  <label class="reference-list__label-item" for="mountain">Гора-Колокол</label>
-                </li>
-                <li class="reference-list__item">
-                  <input class="reference-list__input-item reference-list__input-item--checkbox" type="checkbox" id="park" value="park" name="sights" checked>
-                  <label class="reference-list__label-item" for="park">Слайд-парк</label>
-                </li>
-                <li class="reference-list__item">
-                  <input class="reference-list__input-item reference-list__input-item--checkbox" type="checkbox" id="rocks" value="rocks" name="sights">
-                  <label class="reference-list__label-item" for="rocks">Красные скалы</label>
-                </li>
-              </ul>
-            </div>
-            <div class="reference-form__information">
-              <label class="reference-form__label reference-form__label--title" for="comment">Опишите свои эмоции:</label>
-              <textarea class="reference-form__comment" rows="6" id="comment">Опишите подробно все свои восторги</textarea>
+            <div class="reference-form__opinion">
+              <div class="reference-form__information">
+                <label class="reference-form__label reference-form__label--title" for="comment">Опишите свои эмоции:</label>
+                <textarea class="reference-form__comment" rows="6" id="comment">Опишите подробно все свои восторги</textarea>
+              </div>
             </div>
             <button class="reference-form__button button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">ОТПРАВИТЬ ОТЗЫВ</button>
           </form>
