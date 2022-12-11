@@ -2,17 +2,86 @@
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    width: 648px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 58px;
+  }
 }
 
 .picture-gallery__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 0;
+  }
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    gap: 0;
+  }
 }
 
 .picture-gallery__item {
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    margin: 0;
+    width: 324px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0;
+    margin: 0;
+    width: 400px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.picture-gallery__item--width {
+  @media (min-width: 768px) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #f2f2f2;
+    width: 648px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1200px) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #f2f2f2;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .picture-gallery__link {
@@ -24,6 +93,45 @@
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
+  line-height: 0;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 0;
+    width: 324px;
+    object-fit: cover;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    object-fit: cover;
+  }
+}
+
+.picture-gallery__picture--width {
+  @media (min-width: 768px) {
+    object-fit: cover;
+    width: 648px;
+    height: 400px;
+  }
+
+  @media (min-width: 1200px) {
+    object-fit: cover;
+    width: 1200px;
+    height: 400px;
+  }
+}
+
+.picture-gallery__text {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 209px;
+    padding-left: 20px;
+  }
 }
 
 .picture-gallery__title {
@@ -52,4 +160,8 @@
   background-color: transparent;
   margin: 0;
   padding: 0;
+
+  @media (min-width: 768px) {
+    padding-right: 27px;
+  }
 }
