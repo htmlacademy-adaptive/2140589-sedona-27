@@ -2,7 +2,6 @@
   margin: 0;
   padding: 25px 20px 0;
   text-align: center;
-  position: relative;
   text-transform: uppercase;
 }
 
@@ -20,6 +19,10 @@
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
+}
+
+.promo-clip__wrapper {
+  position: relative;
 }
 
 .promo-clip__picture {
@@ -45,16 +48,7 @@
   border: none;
   background-color: inherit;
   position: absolute;
-  right: 130px;
-  top: 240px;
-
-  @media (min-width: 768px) {
-    right: 350px;
-    top: 400px;
-  }
-
-  @media (min-width: 1200px) {
-    right: 550px;
-    top: 400px;
-  }
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
