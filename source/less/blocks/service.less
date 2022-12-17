@@ -22,7 +22,22 @@
 
 .service__item {
   text-align: start;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    text-align: center;
+    margin: 0;
+    padding: 154px 0 64px;
+    width: 256px;
+  }
+
+  @media (min-width: 1200px) {
+    text-align: center;
+    margin: 0;
+    padding: 169px 0 69px;
+    width: 400px;
+  }
 }
 
 .service__title {
@@ -33,9 +48,123 @@
   margin: 0;
   padding: 0;
   margin-bottom: 16px;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+    margin-bottom: 34px;
+  }
+}
+
+.service__item--accommodation::before {
+  content: "";
+  background-image: url("../img/index/icon-house.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -47px;
+  top: -9px;
+
+  @media (min-width: 768px) {
+    content: "";
+    background-image: url("../img/index/icon-house.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 110px;
+    top: 110px;
+  }
+
+  @media (min-width: 1200px) {
+    content: "";
+    background-image: url("../img/index/icon-house.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 180px;
+    top: 120px;
+  }
+}
+
+.service__item--food::before {
+  content: "";
+  background-image: url("../img/index/icon-burger.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -47px;
+  top: -2px;
+
+  @media (min-width: 768px) {
+    content: "";
+    background-image: url("../img/index/icon-burger.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 110px;
+    top: 110px;
+  }
+
+  @media (min-width: 1200px) {
+    content: "";
+    background-image: url("../img/index/icon-burger.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 180px;
+    top: 120px;
+  }
+}
+
+.service__item--gift::before {
+  content: "";
+  background-image: url("../img/index/icon-gift.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -47px;
+  top: -9px;
+
+  @media (min-width: 768px) {
+    content: "";
+    background-image: url("../img/index/icon-gift.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 110px;
+    top: 110px;
+  }
+
+  @media (min-width: 1200px) {
+    content: "";
+    background-image: url("../img/index/icon-gift.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 180px;
+    top: 120px;
+  }
 }
 
 .service__description {
   margin: 0;
   padding: 0;
+
+  @media (min-width: 768px) {
+    width: 180px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    width: 268px;
+    margin: 0 auto;
+  }
 }

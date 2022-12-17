@@ -7,13 +7,34 @@
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    width: 576px;
+    margin: auto;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    margin: auto;
+    justify-content: space-between;
   }
 }
 
 .reference-list__item {
   margin: 0;
   padding: 0;
-  margin-bottom: 36px;
+  display: block;
+  margin-bottom: 16px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    width: 280px;
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: 1200px) {
+    width: auto;
+  }
 }
 
 .reference-list__label-item {
@@ -24,4 +45,56 @@
   color: #000000;
   margin: 0;
   padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 62px;
+  position: relative;
+  display: block;
+}
+
+.control-mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  top: 0;
+  border-radius: 50%;
+}
+
+.reference-list__input-item[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  background-image: url("../img/form/tick.svg");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 16px;
+  top: 15px;
+}
+
+
+.reference-list__input-item[type="checkbox"] + .control-mark {
+  border-radius: 0;
+}
+
+.reference-list__input-item[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+  content: "";
+}
+
+.reference-list__item:hover .control-mark {
+  background-color: #e5e5e5;
+  opacity: 0.6;
+}
+
+.reference-list__item:active .control-mark {
+  background-color: #d5d5d5;
+  opacity: 0.3;
 }
