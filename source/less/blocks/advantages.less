@@ -19,6 +19,7 @@
   padding: 0;
   list-style-type: none;
   text-align: center;
+  position: relative;
 
   @media (min-width: 768px) {
     display: flex;
@@ -30,6 +31,20 @@
     display: flex;
     flex-wrap: wrap;
     width: 1200px;
+  }
+}
+
+.advantages__list::before {
+  @media (max-width: 767px) {
+    content: "";
+    background-image: url("../img/index/triangle.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 320px;
+    height: 37px;
+    left: 0;
+    top: -20px;
+    background-size: contain;
   }
 }
 

@@ -26,6 +26,8 @@
   position: relative;
 
   @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin: 0;
     padding: 154px 0 64px;
@@ -56,14 +58,16 @@
 }
 
 .service__item--accommodation::before {
-  content: "";
-  background-image: url("../img/index/icon-house.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -47px;
-  top: -9px;
+  @media (max-width: 767px) {
+    content: "";
+    background-image: url("../img/index/icon-house.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -47px;
+    top: -9px;
+  }
 
   @media (min-width: 768px) {
     content: "";
@@ -72,8 +76,8 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    left: 110px;
     top: 110px;
+    align-self: center;
   }
 
   @media (min-width: 1200px) {
@@ -83,20 +87,22 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    left: 180px;
     top: 120px;
+    align-self: center;
   }
 }
 
 .service__item--food::before {
-  content: "";
-  background-image: url("../img/index/icon-burger.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -47px;
-  top: -2px;
+  @media (max-width: 767px) {
+    content: "";
+    background-image: url("../img/index/icon-burger.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -47px;
+    top: -2px;
+  }
 
   @media (min-width: 768px) {
     content: "";
@@ -105,8 +111,8 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    left: 110px;
     top: 110px;
+    align-self: center;
   }
 
   @media (min-width: 1200px) {
@@ -116,20 +122,22 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    left: 180px;
     top: 120px;
+    align-self: center;
   }
 }
 
 .service__item--gift::before {
-  content: "";
-  background-image: url("../img/index/icon-gift.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -47px;
-  top: -9px;
+  @media (max-width: 767px) {
+    content: "";
+    background-image: url("../img/index/icon-gift.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -47px;
+    top: -9px;
+  }
 
   @media (min-width: 768px) {
     content: "";
@@ -138,8 +146,8 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    left: 110px;
     top: 110px;
+    align-self: center;
   }
 
   @media (min-width: 1200px) {
@@ -149,8 +157,8 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    left: 180px;
     top: 120px;
+    align-self: center;
   }
 }
 
