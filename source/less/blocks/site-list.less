@@ -52,13 +52,14 @@
     width: 240px;
     background-color: #ffffff;
   }
-}
 
-@media (min-width: 768px) {
-  .site-list__item:nth-child(2) {
-    margin-right: auto;
+  @media (min-width: 768px) {
+    &:nth-child(2) {
+      margin-right: auto;
+    }
   }
 }
+
 
 .site-list__item a {
   @media (max-width: 767px) {
@@ -108,8 +109,8 @@
   }
 }
 
-@media (max-width: 767px) {
-  .site-list__item:last-child::after {
+.site-list__item:last-child::after {
+  @media (max-width: 767px) {
     content: "";
     position: absolute;
     right: 0;

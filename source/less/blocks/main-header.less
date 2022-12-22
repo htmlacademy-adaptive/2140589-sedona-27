@@ -6,20 +6,20 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  position: relative;
 }
 
 .main-header__logo {
-  display: flex;
-  justify-content: center;
-}
-
-.main-header__logo-image {
-  position: relative;
+  display: inline-block;
+  position: absolute;
   margin-bottom: -103px;
   z-index: 1;
+  width: 185px;
+  height: 96px;
+  transform: translateX(-50%);
 
   @media (min-width: 768px) {
-    position: relative;
+    position: absolute;
     margin-bottom: -103px;
     z-index: 2;
   }

@@ -17,39 +17,17 @@
     padding-top: 101px;
     padding-bottom: 120px;
   }
-}
 
-.sedona-logo::after {
-  content: "";
-  background-image: url("../img/common/intro-triangle.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 320px;
-  height: 57px;
-  left: 0;
-  bottom: -42px;
-  background-size: contain;
-
-  @media (min-width: 768px) {
+  &::after {
     content: "";
     background-image: url("../img/common/intro-triangle.svg");
     background-repeat: no-repeat;
     position: absolute;
-    width: 768px;
     height: 57px;
-    left: 0;
-    bottom: -21px;
-    background-size: contain;
-  }
-
-  @media (min-width: 1200px) {
-    content: "";
-    background-image: url("../img/common/intro-triangle.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 1200px;
-    height: 57px;
+    right: 0;
     left: 0;
     bottom: 0;
+    background-size: 1200px auto;
+    background-position: center bottom;
   }
 }
