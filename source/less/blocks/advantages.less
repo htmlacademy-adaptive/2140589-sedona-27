@@ -48,7 +48,6 @@
   }
 }
 
-
 .advantages__item-wrapper {
   margin: 0;
   padding: 54px 18px 40px 18px;
@@ -90,6 +89,13 @@
 .advantages__item--picture {
   background-color: #81b3d3;
   object-fit: cover;
+
+  &:nth-child(2) {
+    @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
 
   @media (min-width: 768px) {
     display: flex;
