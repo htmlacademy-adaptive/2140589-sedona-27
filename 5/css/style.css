@@ -65,6 +65,7 @@
   width: 185px;
   height: 96px;
   transform: translateX(-50%);
+  left: 50%;
 }
 @media (min-width: 768px) {
   .main-header__logo {
@@ -484,14 +485,6 @@
     display: none;
   }
 }
-@media (max-width: 767px) {
-  .main-nav--closed .site-list__item {
-    display: none;
-  }
-  .main-nav--closed .user-list__item {
-    display: none;
-  }
-}
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -543,6 +536,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+@media (max-width: 767px) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
 }
 .page-container {
   background-color: #ffffff;
@@ -1323,7 +1321,7 @@
   position: relative;
   display: block;
 }
-.control-mark {
+.reference-list__control-mark {
   position: absolute;
   width: 46px;
   height: 46px;
@@ -1331,7 +1329,7 @@
   top: 0;
   border-radius: 50%;
 }
-.reference-list__input-item[type="checkbox"]:checked + .control-mark::before {
+.reference-list__input-item[type="checkbox"]:checked + .reference-list__control-mark::before {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -1342,10 +1340,10 @@
   height: 16px;
   top: 15px;
 }
-.reference-list__input-item[type="checkbox"] + .control-mark {
+.reference-list__input-item[type="checkbox"] + .reference-list__control-mark {
   border-radius: 0;
 }
-.reference-list__input-item[type="radio"]:checked + .control-mark::before {
+.reference-list__input-item[type="radio"]:checked + .reference-list__control-mark::before {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -1355,10 +1353,10 @@
   border-radius: 50%;
   content: "";
 }
-.reference-list__item:hover .control-mark {
+.reference-list__item:hover .reference-list__control-mark {
   background-color: #e5e5e5;
 }
-.reference-list__item:active .control-mark {
+.reference-list__item:active .reference-list__control-mark {
   background-color: #d5d5d5;
   opacity: 0.3;
 }
