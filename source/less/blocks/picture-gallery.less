@@ -23,6 +23,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  position: relative;
 
   @media (min-width: 768px) {
     display: grid;
@@ -35,11 +36,24 @@
     grid-template-columns: 400px 400px 400px;
     gap: 0;
   }
+
+  &::before {
+    @media (max-width: 767px) {
+      content: "";
+      border-top: solid #e5e5e5;
+      height: 1px;
+      width: 320px;
+      position: absolute;
+      top: 0;
+      right: -20px;
+    }
+  }
 }
 
 .picture-gallery__item {
   padding-top: 25px;
   padding-bottom: 25px;
+  position: relative;
 
   @media (min-width: 768px) {
     padding: 0;
@@ -59,6 +73,35 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  &::after {
+    @media (max-width: 767px) {
+      content: "";
+      border-top: solid #e5e5e5;
+      height: 1px;
+      width: 320px;
+      position: absolute;
+      bottom: -4px;
+      right: -20px;
+    }
+  }
+}
+
+.picture-gallery__item-wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 17px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -87,6 +130,8 @@
 .picture-gallery__link {
   margin: 0;
   padding: 0;
+  display: block;
+  line-height: 0;
 }
 
 .picture-gallery__picture {
@@ -100,6 +145,7 @@
     padding: 0;
     width: 324px;
     object-fit: cover;
+    margin-bottom: 22px;
   }
 
   @media (min-width: 1200px) {
@@ -143,12 +189,20 @@
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
+
+  @media (min-width: 1200px) {
+    color: #ffffff;
+  }
 }
 
 .picture-gallery__description {
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
+
+  @media (min-width: 1200px) {
+    color: #ffffff;
+  }
 }
 
 .picture-gallery__likes-number {
@@ -160,8 +214,31 @@
   background-color: transparent;
   margin: 0;
   padding: 0;
+  padding-left: 35px;
+  position: relative;
 
   @media (min-width: 768px) {
     padding-right: 27px;
+  }
+
+  @media (min-width: 1200px) {
+    color: #ffffff;
+  }
+}
+
+.picture-gallery__like {
+  position: absolute;
+  left: 0;
+  fill: rgba(0, 0, 0, 0.3);
+  bottom: 5px;
+
+  @media (min-width: 768px) {
+    top: 18px;
+  }
+}
+
+.picture-gallery__like-color {
+  @media (min-width: 1200px) {
+    fill: rgba(255, 255, 255, 1);
   }
 }
