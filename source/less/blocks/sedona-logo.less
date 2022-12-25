@@ -1,21 +1,35 @@
 .sedona-logo {
   text-align: center;
   background-color: #000000;
-  background-image: url("../img/catalog/background-logo.jpg");
+  background-image: url("../img/common/background-logo-phone.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 52px;
   padding-bottom: 67px;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/common/background-logo-phone@2x.jpg");
+  }
+
   @media (min-width: 768px) {
+    background-image: url("../img/common/background-logo-tablet.jpg");
     padding-top: 95px;
     padding-bottom: 117px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/common/background-logo-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: 1200px) {
     padding-top: 101px;
     padding-bottom: 120px;
+    background-image: url("../img/common/background-logo-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/common/background-logo-desktop@2x.jpg");
+    }
   }
 
   &::after {
