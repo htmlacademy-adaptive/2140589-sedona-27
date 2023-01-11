@@ -64,8 +64,8 @@
     padding: 0;
     margin: 0;
     width: 400px;
-    padding-top: 52px;
-    padding-bottom: 51px;
+    padding-top: 54px;
+    padding-bottom: 49px;
   }
 }
 
@@ -167,13 +167,23 @@
   }
 }
 
-.advantages__description br {
+.advantages__description-indention {
   @media (max-width: 767px) {
     display: none;
   }
 
   @media (min-width: 1200px) {
     display: none;
+  }
+}
+
+.advantages__description-indention--mod {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+
+  @media (min-width: 1200px) {
+    display: block;
   }
 }
 
