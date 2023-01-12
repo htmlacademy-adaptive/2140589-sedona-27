@@ -216,10 +216,9 @@
 .advantages__item--advantage {
   background-color: #eeeeee;
   padding: 24px;
-
-  @media (max-width: 767px) {
-    border-bottom: 1px solid #d6d6d6;
-  }
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
 
   @media (min-width: 768px) {
     padding: 0;
@@ -237,6 +236,19 @@
     width: 400px;
     display: flex;
     flex-direction: column;
+  }
+}
+
+.advantages__item--advantage:not(:last-child)::after {
+  @media (max-width: 767px) {
+    content: "";
+    width: 284px;
+    height: 1px;
+    background-color: #d6d6d6;
+    position: absolute;
+    display: block;
+    bottom: 1px;
+    left: 18px;
   }
 }
 
