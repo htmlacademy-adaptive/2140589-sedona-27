@@ -1,11 +1,53 @@
 .form-popup {
-  width: 320px;
   margin: 0 auto;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.form-popup--warning {
+  display: none;
+}
+
+.form-popup--success {
+  display: none;
+}
+
+.form-popup__success-wrapper {
+  margin: auto;
 }
 
 .form-popup__container {
-  padding: 39px 20px 35px;
+  margin: auto;
+  width: 280px;
+  padding: 45px 20px 35px;
   text-align: center;
+  background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    width: 360px;
+    padding: 50px 20px 49px;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  }
+}
+
+.form-popup__container--success {
+  padding: 38px 20px 35px;
+
+  @media (max-width: 767px) {
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 42px 20px 30px;
+    width: 600px;
+  }
 }
 
 .form-popup__title {
@@ -15,13 +57,46 @@
   color: #000000;
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+}
+
+.form-popup__title br {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
 }
 
 .form-popup__description {
-  margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  width: 237px;
+
+  @media (min-width: 768px) {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+}
+
+.form-popup__description--success {
+  margin-bottom: 22px;
+
+  @media (min-width: 768px) {
+    width: 444px;
+  }
 }
 
 .form-popup__button {
@@ -30,10 +105,37 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  width: 180px;
+
+  @media (min-width: 768px) {
+    padding: 18px 107px 14px 107px;
+    font-size: 21px;
+    width: 272px;
+  }
+}
+
+.form-popup__button--success {
+  margin: 0;
+  padding: 18px 62px 14px 62px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  width: 280px;
+
+  @media (min-width: 768px) {
+    padding: 18px 107px 14px 107px;
+    font-size: 21px;
+    width: 458px;
+  }
 }
 
 .form-popup__button-wrapper {
+  margin: auto;
   text-align: center;
   padding: 20px;
   background-color: #f2f2f2;
+
+  @media (min-width: 768px) {
+    padding: 44px 91px;
+  }
 }

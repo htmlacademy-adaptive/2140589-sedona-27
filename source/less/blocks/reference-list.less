@@ -7,16 +7,40 @@
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    width: 576px;
+    width: auto;
     margin: auto;
+    justify-content: space-between;
+    margin-left: 37px;
+    margin-right: 36px;
+    padding: 0;
   }
 
   @media (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
-    width: 960px;
+    width: auto;
     margin: auto;
     justify-content: space-between;
+    margin-left: 53px;
+    margin-right: 53px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+}
+
+.reference-list--sights {
+  @media (min-width: 768px) {
+    padding: 0;
+    margin-left: 84px;
+    margin-right: 84px;
+    padding-top: 1px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 44px;
+    margin-right: 44px;
+    padding-top: 33px;
+    padding-bottom: 33px;
   }
 }
 
@@ -29,7 +53,22 @@
 
   @media (min-width: 768px) {
     width: 280px;
-    margin-bottom: 36px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+}
+
+.reference-list__item:last-child {
+  margin: 0;
+}
+
+.reference-list__item--sight {
+  @media (min-width: 768px) {
+    width: 224px;
   }
 
   @media (min-width: 1200px) {

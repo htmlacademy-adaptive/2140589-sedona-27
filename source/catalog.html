@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <svg style="display: none;">
@@ -86,6 +86,9 @@
               <li class="picture-gallery__item picture-gallery__item--width">
                 <a class="picture-gallery__link" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/road-desktop.webp 1x, img/catalog/road-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/road-tablet.webp 1x, img/catalog/road-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/catalog/road-phone.webp 1x, img/catalog/road-phone@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/catalog/road-desktop.jpg 1x, img/catalog/road-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog/road-tablet.jpg 1x, img/catalog/road-tablet@2x.jpg 2x">
                     <img class="picture-gallery__picture picture-gallery__picture--width" src="img/catalog/road-phone.jpg" srcset="img/catalog/road-phone@2x.jpg 2x" alt="Красивый вид по дороге в Седону.">
@@ -106,6 +109,9 @@
               <li class="picture-gallery__item">
                 <a class="picture-gallery__link" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/plants-desktop.webp 1x, img/catalog/plants-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/plants-tablet.webp 1x, img/catalog/plants-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/catalog/plants-phone.webp 1x, img/catalog/plants-phone@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/catalog/plants-desktop.jpg 1x, img/catalog/plants-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog/plants-tablet.jpg 1x, img/catalog/plants-tablet@2x.jpg 2x">
                     <img class="picture-gallery__picture" src="img/catalog/plants-phone.jpg" srcset="img/catalog/plants-phone@2x.jpg 2x" alt="Расстения, которые можно встретить в Седоне.">
@@ -126,6 +132,9 @@
               <li class="picture-gallery__item">
                 <a class="picture-gallery__link" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/north-way-desktop.webp 1x, img/catalog/north-way-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/north-way-tablet.webp 1x, img/catalog/north-way-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/catalog/north-way-phone.webp 1x, img/catalog/north-way-phone@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/catalog/north-way-desktop.jpg 1x, img/catalog/north-way-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog/north-way-tablet.jpg 1x, img/catalog/north-way-tablet@2x.jpg 2x">
                     <img class="picture-gallery__picture" src="img/catalog/north-way-phone.jpg" srcset="img/catalog/north-way-phone@2x.jpg 2x" alt="Дорога, которая находится в горах.">
@@ -146,6 +155,9 @@
               <li class="picture-gallery__item">
                 <a class="picture-gallery__link" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/devil-bridge-desktop.webp 1x, img/catalog/devil-bridge-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/devil-bridge-tablet.webp 1x, img/catalog/devil-bridge-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/catalog/devil-bridge-phone.webp 1x, img/catalog/devil-bridge-phone@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/catalog/devil-bridge-desktop.jpg 1x, img/catalog/devil-bridge-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog/devil-bridge-tablet.jpg 1x, img/catalog/devil-bridge-tablet@2x.jpg 2x">
                     <img class="picture-gallery__picture" src="img/catalog/devil-bridge-phone.jpg" srcset="img/catalog/devil-bridge-phone@2x.jpg 2x" alt="Опасный мост, по которому можно пройти.">
@@ -159,7 +171,7 @@
                   <button class="picture-gallery__likes-number">
                     <svg class="picture-gallery__like" width="23" height="21" xmlns="http://www.w3.org/2000/svg">
                       <use xlink:href="#like-button"></use>
-                    </svg>256
+                    </svg>254
                 </button>
                 </div>
               </li>
@@ -171,6 +183,9 @@
           <p class="promo-clip__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="promo-clip__wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/road-clip-desktop.webp 1x, img/catalog/road-clip-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/road-clip-tablet.webp 1x, img/catalog/road-clip-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/catalog/road-clip-phone.webp 1x, img/catalog/road-clip-phone@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/catalog/road-clip-desktop.jpg 1x, img/catalog/road-clip-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/road-clip-tablet.jpg 1x, img/catalog/road-clip-tablet@2x.jpg 2x">
               <img class="promo-clip__picture" src="img/catalog/road-clip-phone.jpg" srcset="img/catalog/road-clip-phone@2x.jpg 2x" alt="Видео обзор Седоны">
